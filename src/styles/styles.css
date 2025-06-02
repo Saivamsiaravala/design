@@ -128,49 +128,55 @@ body .app .content main .dashboard .cards {
   color: darkslategray;
 }
 body .app .content main .dashboard .cards .card {
-  overflow: hidden;
-  position: relative;
+  font-weight: 600;
+  background-color: lightblue;
+  border-radius: 1rem;
   padding: 1rem;
+  width: 20vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  height: 25vh;
-  width: 20vw;
-  border-radius: 5%;
-  font-size: 1rem;
-  background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  gap: 12px;
+  transition: transform 0.2s;
 }
 body .app .content main .dashboard .cards .card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 body .app .content main .dashboard .cards .card .title {
-  font-weight: 700;
-  display: inline-block;
-  position: relative;
-  font-size: 1.125rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+body .app .content main .dashboard .cards .card .title img {
+  margin-left: 8px;
 }
 body .app .content main .dashboard .cards .card .detail {
   display: flex;
   justify-content: space-between;
 }
-body .app .content main .dashboard .cards .card .detail .crop {
-  display: flex;
-  justify-content: center;
-  gap: 0.125rem;
-}
+body .app .content main .dashboard .cards .card .detail .crop,
 body .app .content main .dashboard .cards .card .detail .value {
   display: flex;
-  justify-content: center;
-  gap: 0.125rem;
+  align-items: center;
+  font-size: 16px;
+}
+body .app .content main .dashboard .cards .card .detail .crop img,
+body .app .content main .dashboard .cards .card .detail .value img {
+  margin-left: 6px;
 }
 body .app .content main .dashboard .cards .card .year {
   display: flex;
-  justify-content: center;
-  gap: 0.125rem;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 14px;
+  color: #555;
+}
+body .app .content main .dashboard .cards .card .year img {
+  margin-left: 6px;
 }
 body .app .content main .dashboard .chart {
   padding-top: 2rem;

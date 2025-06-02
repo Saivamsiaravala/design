@@ -134,65 +134,61 @@ body {
             text-align: center;
             color: darkslategray;
             .card {
-              overflow: hidden;
-              position: relative;
+              font-weight: 600;
+              background-color: lightblue;
+              border-radius: 1rem;
               padding: 1rem;
+              width: 20vw;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              font-family: Arial, sans-serif;
               display: flex;
               flex-direction: column;
-              gap: 0.5rem;
-              height: 25vh;
-              width: 20vw;
-              border-radius: 5%;
-              font-size: 1rem;
-              background-color: white;
-              // color: white;
+              gap: 12px;
+              transition: transform 0.2s;
 
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
               &:hover {
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                  rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-                // .title {
-                //   position: relative;
-                //   display: inline-block;
-                //   &::after {
-                //     content: "";
-                //     position: absolute;
-                //     left: 0;
-                //     bottom: 0;
-                //     width: 200%;
-                //     height: 0.125rem;
-                //     background-color: black;
-                //   }
-                // }
+                transform: translateY(-4px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
               }
+
               .title {
-                font-weight: 700;
-                display: inline-block;
-                position: relative;
-                font-size: 1.125rem;
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
-                justify-content: center;
+                font-weight: bold;
+                font-size: 18px;
+
+                img {
+                  margin-left: 8px;
+                }
               }
+
               .detail {
                 display: flex;
                 justify-content: space-between;
-                .crop {
-                  display: flex;
-                  justify-content: center;
-                  gap: 0.125rem;
-                }
+
+                .crop,
                 .value {
                   display: flex;
-                  justify-content: center;
-                  gap: 0.125rem;
+                  align-items: center;
+                  font-size: 16px;
+
+                  img {
+                    margin-left: 6px;
+                  }
                 }
               }
+
               .year {
                 display: flex;
-                justify-content: center;
-                gap: 0.125rem;
+                align-items: center;
+                justify-content: flex-end;
+                font-size: 14px;
+                color: #555;
+
+                img {
+                  margin-left: 6px;
+                }
               }
             }
           }
