@@ -22,9 +22,9 @@ const LoginForm = () => {
           <label htmlFor="password">Password</label>
           <input type="password" placeholder="Enter Password" />
         </div>
+        <button type="submit">Login</button>
       </form>
-      <br />
-      OR
+      <div style={{ textAlign: "center", marginBottom: "0.5rem" }}>OR</div>
       <div className="ways">
         <div className="desc">Login using social networks</div>
         <div className="networks">
